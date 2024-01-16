@@ -155,9 +155,7 @@ main{
     font-size: 1.2rem;
     color: rgba(19, 19, 24, 0.70);
 }
-.chose-grid{
-    
-}
+
 .chose-row{
     width: 900px;
     display: flex;
@@ -410,7 +408,11 @@ main{
 /* mobile */
 @media screen and ( max-width: 576px) {
     header{
-        margin: 20px 30px;
+        margin: 20px 10px;
+    }
+    .logo{
+        padding-left: 20px;
+        font-size: 1.2rem;
     }
     nav{
         flex-direction: column;
@@ -441,7 +443,16 @@ main{
         margin: 50px 0;
     }
     .chose-txt{
-        width: 80%;
+        width: 90%;
+    }
+    .img-rel{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+    }
+    .img-rel img{
+        
+        width: 50%;
     }
     .chose-row{
         flex-direction: column;
