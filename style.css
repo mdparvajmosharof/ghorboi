@@ -272,6 +272,42 @@ main{
     font-weight: 900;
     font-size: 1.5rem;
 }
+.footer{
+    background-color: rgba(128, 128, 128, 0.076);
+    padding:50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-foot{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo-foot h1{
+    font-weight: 1000;
+    font-size: 2.5rem;
+}
+.logo-foot h1 span{
+    color: var(--txt-cls);
+}
+.foot-txt{
+    width: 90%;
+}
+.foot-icon{
+    padding: 20PX 0;
+    font-size: 2rem;
+}
+.foot-icon i{
+    padding: 10px;
+}
+.hr{
+    width: 100%;
+}
+.copy-r{
+    padding: 20px;
+}
 
 
 
@@ -344,6 +380,9 @@ main{
         line-height: .3;
         padding: 5px 40px;
         padding-bottom: 0;
+    }
+    .footer{
+        padding: 50px 40px;
     }
 
 }
