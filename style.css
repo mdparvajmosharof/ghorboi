@@ -201,4 +201,15 @@ main{
         display: block;
         width: 100%;
     }
+    .chose{
+        margin: 50px 0;
+    }
+    .chose-txt{
+        width: 80%;
+    }
+    .chose-row{
+        flex-direction: column;
+        height: auto;
+    }
+
 }
