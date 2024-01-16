@@ -69,18 +69,18 @@ nav{
     border-radius: 15px;
 }
 .banner-txt{
-    
     color: white;
     text-align: center;
 }
 .bg-banner h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 3.5rem;
     font-weight: 800;
 }
-.banner-txt p{
-    font-weight: 700;
+.banner-txt .p{
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
+    font-weight: 800;
 }
 .banner-input{
     margin: 50px 0;
@@ -88,7 +88,8 @@ nav{
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.287);
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 10px;
 }
 
 .banner-input input{
@@ -209,7 +210,68 @@ main{
     border: 1px solid #ec489dfb;
     background-color: #f875ff2a;
 }
+.newsletter{
+   
+    margin: 100px 0;
+    gap: 50PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-form{
+    height: 100%;
+    padding: 40px;
+    border: 2px solid #32c621;
+    border-radius: 10px;
+}
+.news-form h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
 
+.news-form input{
+    width: 90%;
+    margin: 5px 0;
+    padding: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.198);
+    border-radius: 10px;
+}
+.news-form input::placeholder{
+    padding: 0 20px;
+    color: rgb(50, 50, 50);
+    font-size: 1.2rem;
+}
+.news-form button{
+    margin-top: 5px ;
+    width: calc(100% + 10PX);
+}
+.news-img{
+    position: relative;
+}
+.save-tag{
+    padding: 10px 60px;
+    padding-bottom: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    text-align: center;
+    line-height: .3;
+    background-color: #3aba2c;
+    border-radius: 10px;
+    transform: rotate(-20deg);
+}
+.save-tag p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.save-tag h5{
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
 
 
 
