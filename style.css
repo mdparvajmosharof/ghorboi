@@ -133,6 +133,43 @@ main{
 .pop-txt p, li{
     color: rgba(19, 19, 24, 0.70) ;
 }
+.chose-row img{
+    
+    width: 100%;
+    height: 100%;
+}
+.chose{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    margin: 100px 0;
+}
+.chose-txt{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.chose-txt h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.banner-txt p{
+    font-size: 1.2rem;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.chose-row{
+    
+    display: flex;
+    
+    height: 250px;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+
+
 /* responsive */
 /* mobile */
 @media screen and ( max-width: 576px) {
