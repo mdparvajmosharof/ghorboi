@@ -330,5 +330,20 @@ main{
     .why-card{
         width: 300px;
     }
+    .newsletter{
+        flex-direction: column;
+    }
+    .news-form button{
+        width: 100%;
+        
+    }
+    .news-img img{
+        width: 100%;
+    }
+    .save-tag{
+        line-height: .3;
+        padding: 5px 40px;
+        padding-bottom: 0;
+    }
 
 }
