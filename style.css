@@ -24,6 +24,11 @@
     font-size: 1.3rem;
     background-color: var(--txt-cls);
 }
+.pri-btn:hover{
+    color: #18b806;
+    background-color: var(--bg);
+    border: 2px #18b806 solid;
+}
 header{
     margin: 30px 100px;
     
@@ -136,6 +141,42 @@ main{
 .pop-txt p, li{
     color: rgba(19, 19, 24, 0.70) ;
 }
+.victor{
+    margin: 100px 0;
+    height: 500px;
+    background: linear-gradient( to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),  url("../images/Vectorrr.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .vic-txt{
+    color: white;
+    padding-left: 50px;
+    
+  }
+  .vic-txt > h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: .7;
+  }
+  .vic-txt h2 span{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #32c621;
+  }
+  .vic-txt > p{
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .vic-img > img{
+   max-height: 300px;
+   /* width: 70%; */
+   padding-right: 50px;
+  }
 
 .chose{
     display: flex;
@@ -506,5 +547,11 @@ main{
     .get-img img{
         width: 100%;
     }
-
+    .victor{
+        flex-direction: column;
+        height: 400px;
+    }
+    .vic-img{
+        display: none;
+    }
 }
