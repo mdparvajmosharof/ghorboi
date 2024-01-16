@@ -47,6 +47,8 @@ nav{
 }
 .menu ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu li{
     padding-right: 50px;
@@ -416,6 +418,10 @@ main{
     }
     nav{
         flex-direction: column;
+        align-items: center;
+    }
+    .menu li{
+        padding: 0 15px 0 0;
     }
     .banner-input{
         grid-template-columns: 1fr;
