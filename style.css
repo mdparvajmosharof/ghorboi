@@ -280,6 +280,31 @@ main{
     display: flex;
     justify-content: center;
 }
+.get-lst{
+    margin: 50px 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.get-txt h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.get-txt p, li{
+    color: rgba(19, 19, 24, 0.70) ;
+}
+.get-img{
+    position: relative;
+}
+.get-ab{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .newsletter{
    
     margin: 100px 0;
@@ -457,6 +482,12 @@ main{
     .deal-box{
         height: 700px;
         
+    }
+    .get-lst{
+        flex-direction: column;
+    }
+    .get-img img{
+        width: 100%;
     }
 
 }
