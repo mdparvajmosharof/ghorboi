@@ -14,6 +14,16 @@
 .txt-clr{
     color: #32c621;
 }
+.pri-btn{
+    color: white;
+    padding:20px ;
+    border: none;
+    border-radius: 10px;
+    
+    font-weight: 800;
+    font-size: 1.3rem;
+    background-color: var(--txt-cls);
+}
 header{
     margin: 30px 100px;
     
@@ -108,7 +118,21 @@ nav{
     font-size: 1.3rem;
     background-color: var(--txt-cls);
 }
-
+main{
+    margin: 50px 100px;
+}
+.pop-tr{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.pop-txt h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.pop-txt p, li{
+    color: rgba(19, 19, 24, 0.70) ;
+}
 /* responsive */
 /* mobile */
 @media screen and ( max-width: 576px) {
@@ -125,5 +149,19 @@ nav{
 
     .banner-input input{
         width: 87%;
+    }
+    main{
+        margin: 20px;
+    }
+    .pop-tr{
+        flex-direction: column;
+    }
+    .pop-img{
+        display: flex;
+        justify-content: center;
+    }
+    .pop-img img{
+        display: block;
+        width: 100%;
     }
 }
