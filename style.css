@@ -134,11 +134,7 @@ main{
 .pop-txt p, li{
     color: rgba(19, 19, 24, 0.70) ;
 }
-.chose-row img{
-    
-    width: 100%;
-    height: 100%;
-}
+
 .chose{
     display: flex;
     flex-direction: column;
@@ -159,14 +155,33 @@ main{
     font-size: 1.2rem;
     color: rgba(19, 19, 24, 0.70);
 }
-
+.chose-grid{
+    
+}
 .chose-row{
-    
+    width: 900px;
     display: flex;
-    
+    flex-grow: 1;
     height: 250px;
     gap: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.chose-row img{
+    
+    width: 100%;
+    height: 100%;
+}
+.img-rel{
+    position: relative;
+}
+.txt-ab{
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .why-us{
     margin: 0 100px;
@@ -209,6 +224,61 @@ main{
 .w-box-3{
     border: 1px solid #ec489dfb;
     background-color: #f875ff2a;
+}
+.deal{
+    margin-top: 100px;
+   
+}
+.deal-txt{
+    text-align: center;
+    padding-bottom: 10PX;
+}
+.deal-txt h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.deal-box{
+
+    margin: 20px 0;
+    height: 500px;
+    background: url("images/Group\ 39.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.deal-subox{
+    background-color: rgba(255, 255, 255, 0.804);
+    margin: 0 20px;
+    padding: 50px;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+.deal-det{
+    display: flex;
+    gap: 30px;
+}
+.deal-det i{
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-right: 10px;
+    color: #118a03;
+}
+.deal-subox h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.price{
+    font-weight: 900;
+    color: #118a03;
+}
+.see-btn{
+    display: flex;
+    justify-content: center;
 }
 .newsletter{
    
@@ -383,6 +453,10 @@ main{
     }
     .footer{
         padding: 50px 40px;
+    }
+    .deal-box{
+        height: 700px;
+        
     }
 
 }
