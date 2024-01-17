@@ -195,42 +195,34 @@ main{
    padding-right: 50px;
   }
 
-.chose{
-    display: flex;
-    flex-direction: column;
-   
-    align-items: center;
-    margin: 100px 0;
+  .chose{
+            
+    margin: 0 auto;
 }
 .chose-txt{
-    width: 60%;
+    width: 100%;
     text-align: center;
-    padding-bottom: 30px;
 }
-.chose-txt h1{
-    font-size: 2.5rem;
-    font-weight: 800;
-}
-.banner-txt p{
-    font-size: 1.2rem;
-    color: rgba(19, 19, 24, 0.70);
+.chose-grid{
+    margin: 2rem 0;
+    width: auto;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-areas: 
+    "grid1 grid1 grid1 grid2 grid2 grid2"
+    "grid3 grid3 grid4 grid4 grid5 grid5"
+    "grid6 grid6 grid7 grid7 grid7 grid7"
+    ;
 }
 
-.chose-row{
-    width: 900px;
-    display: flex;
-    flex-grow: 1;
-    height: 250px;
-    gap: 20px;
-    margin-bottom: 20px;
+.img-rel{
+    width: 100%;
+    height: 280PX;
+    position: relative;
 }
-.chose-row img{
-    
+.img-rel img{
     width: 100%;
     height: 100%;
-}
-.img-rel{
-    position: relative;
 }
 .txt-ab{
     color: white;
@@ -240,6 +232,27 @@ main{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.grid1{
+    grid-area: grid1;
+}
+.grid2{
+    grid-area: grid2;
+}
+.grid3{
+    grid-area: grid3;
+}
+.grid4{
+    grid-area: grid4;
+}
+.grid5{
+    grid-area: grid5;
+}
+.grid6{
+    grid-area: grid6;
+}
+.grid7{
+    grid-area: grid7;
 }
 .why-us{
     margin: 0 100px;
@@ -538,25 +551,21 @@ main{
         display: block;
         width: 100%;
     }
-    .chose{
-        margin: 50px 0;
-    }
-    .chose-txt{
-        width: 90%;
-    }
-    .img-rel{
-       width: 100%;
-       display: flex;
-       justify-content: center;
-    }
-    .img-rel img{
-        
-        width: 40%;
-    }
-    .chose-row{
-        flex-direction: column;
-        height: auto;
-    }
+    .chose-txt p{
+        padding: 0 50px;
+     }
+     .chose-grid{
+         margin: 20px;
+         grid-template-areas: 
+         "grid1"
+         "grid2"
+         "grid3"
+         "grid4"
+         "grid5"
+         "grid6"
+         "grid7"
+         ;
+     }
     .why-us{
         margin: 0 20px;
     }
