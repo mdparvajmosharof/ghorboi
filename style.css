@@ -46,9 +46,26 @@ nav{
 .logo h1{
     font-weight: 1000;
     font-size: 2.5rem;
+    
 }
 .logo h1 span{
     color: var(--txt-cls);
+}
+#check{
+    display: none;
+}
+
+.menu-bar{
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    top: 0;
+    right: 0;
+}
+.menu-bar #close-icon{
+    display: none;
+    font-size: 1.8rem;
 }
 .menu ul{
     display: flex;
@@ -458,15 +475,50 @@ main{
         font-size: 1.2rem;
     }
     nav{
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        position: relative;
+    }
+    #check:checked~.menu-bar #menu-icon{
+        display: none;
+    }
+    #check:checked~.menu-bar #close-icon{
+        display: block;
+    }
+    .menu-bar{
+        display: inline-flex;
+        top: 50%;
+        right: 5%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu{
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: #00000015;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .5);border-radius: 0 0 20px 20px;
+        transition: .3s ease-out;
+    }
+    #check:checked~.menu {
+        height: 22rem;
+    }
+    .menu ul{
+        display: block;
     }
     .menu li{
-        padding: 0 15px 0 0;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .menu li a{
+        font-size: 1.5rem;
     }
     .banner-input{
-        grid-template-columns: 1fr;
-        margin: 30px;
+    grid-template-columns: 1fr;
+    margin: 30px;
     }
 
     .banner-input input{
@@ -499,7 +551,7 @@ main{
     }
     .img-rel img{
         
-        width: 50%;
+        width: 40%;
     }
     .chose-row{
         flex-direction: column;
