@@ -528,6 +528,7 @@ main{
     }
     #check:checked~.menu {
         height: 22rem;
+        z-index: 10;
     }
     .menu ul{
         display: block;
